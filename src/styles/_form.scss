@@ -1,0 +1,78 @@
+.form {
+    background: $bgc;
+    border: 1px solid $border-color;
+    box-sizing: border-box;
+    box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+    width: 460px;
+    height: 490px;
+    margin-left: 68px;
+    margin-bottom: 39px;
+
+    h5 {
+        font-family: "Lato";
+        font-size: 18px;
+        line-height: 39px;
+        color: $green;
+        text-align: center;
+        padding-top: 36px;
+    }
+
+    &__textarea {
+        background: $white;
+        box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+        border-radius: 5px;
+        border: none;
+        width: 380px;
+        height: 190px;
+        margin: 20px 40px 30px;
+        outline-color: $green;
+        resize: none;
+    }
+
+    &__textarea::placeholder {
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 19px;
+        color: $light-gray;
+        padding: 20px 20px 78px;
+    }
+
+    &__textarea:hover {
+        box-shadow: -20px 20px 50px rgba(67, 67, 67, 0.1);
+    }
+
+    &__button--ask,
+    &__button--choose {
+        width: 380px;
+        height: 55px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+        border-radius: 5px;
+        text-transform: uppercase;
+        outline: none;
+        transition: 1s;
+
+    }
+
+    &__button--ask {
+        background: $green;
+        color: $white;
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    &__button--choose {
+        background: $bgc;
+        color: $green;
+        border: 2px solid $green;
+    }
+
+    &__button--ask:hover,
+    &__button--choose:hover {
+        transform: scale(1.05);
+    }
+
+}
