@@ -6,13 +6,15 @@ h1 {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 .ask {
   min-width: 100%;
@@ -132,6 +134,72 @@ h1 {
 .question {
   min-width: 100%;
   background: #FFFFFF; }
+  .question__header {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #454C66;
+    margin: 61px auto 0; }
+  .question__desc {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    width: 446px;
+    height: 56px;
+    margin: 19px auto; }
+  .question__card {
+    width: 100%;
+    height: 70px;
+    -webkit-box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+            box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+    border-radius: 5px;
+    background: #FDFEFF;
+    margin-bottom: 20px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .question__card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: -20px 20px 50px rgba(67, 67, 67, 0.1);
+            box-shadow: -20px 20px 50px rgba(67, 67, 67, 0.1); }
+  .question__card p {
+    padding-left: 19px;
+    padding-top: 21px;
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 28px;
+    color: #747A88; }
+  .question__button--choose {
+    margin: 20px auto;
+    width: 380px;
+    height: 55px;
+    background: #FDFEFF;
+    color: #03C473;
+    border: 2px solid #03C473;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+            box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 0px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+  .question__button--choose:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 
 body {
   background: #eee; }
