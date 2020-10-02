@@ -1,0 +1,143 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.ask {
+  min-width: 100%;
+  background: url("../images/bg-header.svg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover; }
+  .ask__logo {
+    padding-top: 60px;
+    padding-left: 15px; }
+  .ask__header {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 76px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #454C66;
+    margin-top: 100px;
+    margin-bottom: 18px; }
+  .ask__desc {
+    font-family: "Lato";
+    font-size: 22px;
+    line-height: 36px; }
+
+.form {
+  background: #FDFEFF;
+  border: 1px solid #EDF2FD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+          box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+  width: 460px;
+  height: 490px;
+  margin-left: 68px;
+  margin-bottom: 39px; }
+  .form h5 {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 39px;
+    color: #03C473;
+    text-align: center;
+    padding-top: 36px; }
+  .form__textarea {
+    background: #FFFFFF;
+    -webkit-box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+            box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+    border-radius: 5px;
+    border: none;
+    width: 380px;
+    height: 190px;
+    margin: 20px 40px 30px;
+    outline-color: #03C473;
+    resize: none; }
+  .form__textarea::-webkit-input-placeholder {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #D1D5DE;
+    padding: 20px 20px 78px; }
+  .form__textarea::-moz-placeholder {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #D1D5DE;
+    padding: 20px 20px 78px; }
+  .form__textarea:-ms-input-placeholder {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #D1D5DE;
+    padding: 20px 20px 78px; }
+  .form__textarea::-ms-input-placeholder {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #D1D5DE;
+    padding: 20px 20px 78px; }
+  .form__textarea::placeholder {
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #D1D5DE;
+    padding: 20px 20px 78px; }
+  .form__textarea:hover {
+    -webkit-box-shadow: -20px 20px 50px rgba(67, 67, 67, 0.1);
+            box-shadow: -20px 20px 50px rgba(67, 67, 67, 0.1); }
+  .form__button--ask, .form__button--choose {
+    width: 380px;
+    height: 55px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+            box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .form__button--ask {
+    background: #03C473;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 20px; }
+  .form__button--choose {
+    background: #FDFEFF;
+    color: #03C473;
+    border: 2px solid #03C473; }
+  .form__button--ask:hover, .form__button--choose:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+.question {
+  min-width: 100%;
+  background: #FFFFFF; }
+
+body {
+  background: #eee; }
+
+.hightlight {
+  color: #0063FF;
+  font-weight: bold; }
+
+/*# sourceMappingURL=main.css.map */
