@@ -75,9 +75,49 @@
         transform: scale(1.05);
     }
 
+    &__input {
+        display: none;
+        width: 300px;
+        height: 60px;
+        padding-left: 47px;
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-bottom: 20px;
+        box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+        border-radius: 5px;
+        border: 1px solid #bfbfbf;
+        box-sizing: border-box;
+        color: #bfbfbf;
+      }
+
+      &__input::placeholder {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        color: #bfbfbf;
+      }
+
+      &__input--user-img {
+        background: url(../images/User.svg) no-repeat 5% 50%;
+      }
+    
+      &__input--email-img {
+        background: url(../images/email.svg) no-repeat 5% 50%;
+      }
+    
+      &__input--phone-img {
+        background: url(../images/phone.svg) no-repeat 5% 50%;
+      }
+
     @media screen and(max-width: 414px){
-        &__textarea {
+        &__textarea,
+        &__input {
             width: 265px;
+        }
+
+        &__input {
+            margin-left: 39px;
+            margin-right: 0;
         }
 
         &__button--ask,
@@ -88,8 +128,13 @@
     }
 
     @media screen and(max-width: 375px){
-        &__textarea {
+        &__textarea,
+        &__input {
             width: 230px;
+        }
+
+        &__input {
+            margin-left: 40px;
         }
 
         &__button--ask,
@@ -101,7 +146,8 @@
     @media screen and(max-width: 320px){
         &__textarea,
         &__button--ask,
-        &__button--choose  {
+        &__button--choose,
+        &__input  {
             width: 210px;
             margin-left: 24px; 
         }
