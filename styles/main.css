@@ -147,18 +147,69 @@ h1 {
   .form__button--ask:hover, .form__button--choose:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
+  .form__input {
+    display: none;
+    width: 300px;
+    height: 60px;
+    padding-left: 47px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+            box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #bfbfbf; }
+  .form__input::-webkit-input-placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bfbfbf; }
+  .form__input::-moz-placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bfbfbf; }
+  .form__input:-ms-input-placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bfbfbf; }
+  .form__input::-ms-input-placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bfbfbf; }
+  .form__input::placeholder {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bfbfbf; }
+  .form__input--user-img {
+    background: url(../images/User.svg) no-repeat 5% 50%; }
+  .form__input--email-img {
+    background: url(../images/email.svg) no-repeat 5% 50%; }
+  .form__input--phone-img {
+    background: url(../images/phone.svg) no-repeat 5% 50%; }
   @media screen and (max-width: 414px) {
-    .form__textarea {
+    .form__textarea, .form__input {
       width: 265px; }
+    .form__input {
+      margin-left: 39px;
+      margin-right: 0; }
     .form__button--ask, .form__button--choose {
       width: 265px; } }
   @media screen and (max-width: 375px) {
-    .form__textarea {
+    .form__textarea, .form__input {
       width: 230px; }
+    .form__input {
+      margin-left: 40px; }
     .form__button--ask, .form__button--choose {
       width: 230px; } }
   @media screen and (max-width: 320px) {
-    .form__textarea, .form__button--ask, .form__button--choose {
+    .form__textarea, .form__button--ask, .form__button--choose, .form__input {
       width: 210px;
       margin-left: 24px; } }
 
@@ -583,7 +634,7 @@ h1 {
   .footer__contacts-tel {
     font-weight: bold; }
   .footer__line {
-    min-width: 1600px;
+    min-width: 100%;
     height: 1px;
     background: rgba(255, 255, 255, 0.4);
     margin-bottom: 20px; }
@@ -602,6 +653,21 @@ h1 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+  @media screen and (max-width: 1024px) {
+    .footer__line {
+      width: 1024px; } }
+  @media screen and (max-width: 768px) {
+    .footer__line {
+      width: 768px; } }
+  @media screen and (max-width: 414px) {
+    .footer__line {
+      width: 414px; } }
+  @media screen and (max-width: 375px) {
+    .footer__line {
+      width: 375px; } }
+  @media screen and (max-width: 320px) {
+    .footer__line {
+      width: 320px; } }
 
 body {
   background: #eee; }
