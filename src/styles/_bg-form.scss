@@ -1,0 +1,31 @@
+.bg-form {
+    min-width: 100%;
+
+    &__bg {
+        background: url("../images/bg-form.svg"), no-repeat;
+        width: 1139px;
+        height: 600px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__form {
+        margin-top: 55px;
+        margin-right: 30px;
+    }
+
+    @media screen and(max-width: 768px) {
+        &__bg {
+            background: white;
+            justify-content: center;
+        }
+    }
+
+    @media screen and(max-width: 414px) {
+        &__form {
+            margin: 0 auto;
+        }
+    
+    }
+}

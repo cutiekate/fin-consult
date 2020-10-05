@@ -1,0 +1,50 @@
+.footer {
+    min-width: 100%;
+    background: $text-main;
+
+    &__logo {
+        margin-top: 28px;
+    }
+
+    &__contacts {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__contacts p,
+    &__contacts-tel {
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 200%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__contacts-tel {
+        font-weight: bold;
+    }
+
+    &__line {
+        min-width: 1600px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.4);
+        margin-bottom: 20px;
+    }
+
+    &__politics p,
+    &__rights p{
+        font-family: "Lato";
+        font-size: 16px;
+        line-height: 200%;
+        text-decoration-line: underline;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__politics {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+}
