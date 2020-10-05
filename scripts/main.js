@@ -8,3 +8,14 @@ $('.form__button--ask').on('click', function(event) {
     $('.form h5').html("Заполните форму и получите ответ на ваш вопрос");
     $('.form h5').css({"color": "#0063FF"});
 })
+
+$(".form__button--choose").on("click","a", function (event) {
+ 
+    event.preventDefault();
+    
+    var id = $(this).attr('href'),
+
+    top = $(id).offset().top;
+    
+    $('body,html').animate({scrollTop: top}, 1500);
+    });
