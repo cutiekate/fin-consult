@@ -75,4 +75,63 @@
         transform: scale(1.05);
     }
 
+    @media screen and(max-width: 414px){
+        &__textarea {
+            width: 265px;
+        }
+
+        &__button--ask,
+        &__button--choose {
+            width: 265px;
+        }
+
+    }
+
+    @media screen and(max-width: 375px){
+        &__textarea {
+            width: 230px;
+        }
+
+        &__button--ask,
+        &__button--choose {
+            width: 230px;
+        }
+    }
+
+    @media screen and(max-width: 320px){
+        &__textarea,
+        &__button--ask,
+        &__button--choose  {
+            width: 210px;
+            margin-left: 24px; 
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+    .form {
+        margin: 20px auto;
+    }
+}
+
+@media screen and(max-width: 414px){
+    .form {
+        width: 350px;
+    }
+}
+
+@media screen and(max-width: 375px){
+    .form {
+        width: 310px;
+    }
+}
+
+@media screen and(max-width: 320px){
+    .form {
+        width: 260px;
+    }
+
+    .form h3 {
+        padding-top: 25px;
+    }
 }

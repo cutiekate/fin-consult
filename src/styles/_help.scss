@@ -1,3 +1,97 @@
 .help {
+    &__header {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 76px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $text-main;
+        margin: 80px auto 60px;
+    }
+
+    &__card {
+        width: 360px;
+        height: 260px;
+        margin-right: 29px;
+        box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+        border-radius: 5px;
+    }
+
+    &__card:last-child {
+        margin-right: 0;
+    }
+     &__card_bg1 {
+         background: url("../images/icon-people-1.svg") no-repeat 20% 50%;
+       
+     }
+     &__card_bg2 {
+        background: url("../images/icon-people-2.svg") no-repeat 20% 50%;
+     }
+     
+    &__card_bg3 {
+        background: url("../images/icon-people-3.svg") no-repeat 20% 50%;
+    }
     
+    &__card h3 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 39px;
+        color: $gray;
+        text-align: center;
+        padding-top: 58px;
+        padding-bottom: 12px;
+    }
+
+    &__card p {
+        font-family: "Lato";
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $gray;
+    }
+
+    @media screen and(max-width: 768px) {
+        &__card h3 {
+            line-height: 21px;
+            padding-top: 10px; 
+        }
+    }
+
+    @media screen and(max-width: 414px) {
+        &__header {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 29px;
+        }
+
+        &__card,
+        &__card:last-child {
+            margin: 0 30px 30px;
+        }
+
+        &__card h3 {
+            padding-top: 50px;
+        }
+    }
+
+    @media screen and(max-width: 375px) {
+        &__header {
+            margin-top: 35px;
+            font-size: 27px;
+        }
+    }
+
+    @media screen and(max-width: 320px) {
+        &__header {
+          line-height: 40px;
+        }
+
+        &__card h3 {
+            padding-top: 20px;
+        }
+    }
 }
