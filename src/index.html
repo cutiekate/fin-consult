@@ -6,6 +6,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
   </head>
   <body>
     <header class="container ask">
@@ -41,11 +42,12 @@
               <div>
                 <button class="form__button--ask">СПРОСИТЬ У АНАЛИТИКА</button>
               </div>
-             <div>
-               <a href="#list">
-                <button class="form__button--choose">выберите из списка</button>
-               </a>
+             <div class="scroll"> 
+              <a href="#list">
+              <button class="form__button--choose">выберите из списка</button>
+             </a>
              </div>
+             
               
             </form>
 
@@ -58,42 +60,42 @@
         <div class="row">
           <h2 class="question__header">Список популярных вопросов</h2>
         </div>
-        <div class="row">
+        <div class="row" id="list">
           <p class="question__desc">Выберите один или несколько вопросов и получите подробный ответ от наших аналитиков</p>
         </div>
-        <div class="row" id="list">
+        <div class="row">
           <div class="col-lg">
             <div class="question__card" data-text="Как выбрать брокера?">
-              <p>Как выбрать брокера?</p>
+              <p>Как выбрать брокера?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Что такое голубые фишки?">
-              <p>Что такое голубые фишки?</p>
+              <p>Что такое голубые фишки?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Какие ошибки допускают инвесторы?">
-              <p>Какие ошибки допускают инвесторы?</p>
+              <p>Какие ошибки допускают инвесторы?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Что такое ETF фонд?">
-              <p>Что такое ETF фонд?</p>
+              <p>Что такое ETF фонд?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Как правильно диверсифицировать портфель?">
-              <p>Как правильно диверсифицировать портфель?</p>
+              <p>Как правильно диверсифицировать портфель?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
           </div>
           <div class="col-lg">
             <div class="question__card" data-text="Как избежать рисков?">
-              <p>Как избежать рисков? </p>
+              <p>Как избежать рисков? </p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Что такое бизнес по франшизе?">
-              <p>Что такое бизнес по франшизе?</p>
+              <p>Что такое бизнес по франшизе?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Как прибыльно инвестировать">
-              <p>Как прибыльно инвестировать?</p>
+              <p>Как прибыльно инвестировать?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Во что лучше всего вкладывать средства?">
-              <p>Во что лучше всего вкладывать средства?</p>
+              <p>Во что лучше всего вкладывать средства?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
             <div class="question__card" data-text="Как правильно торговать на бирже?">
-              <p>Как правильно торговать на бирже?</p>
+              <p>Как правильно торговать на бирже?</p><button class="question__card--btn">ВЫБРАТЬ ВПРОС</button><img class="question__card--checked" src="images/icon check.svg">
             </div>
           </div>
         </div>
@@ -165,24 +167,24 @@
       <div class="container">
         <h2 class="steps__header">ВСЕГО 3 ПРОСТЫХ ШАГА</h2>
         <div class="row">
-          <div class="col steps__info">
-            <img src="./images/step1.svg">
-            <p>Заполняете форму <br> и оставляете вопрос</p>
-            <div class=" steps__number steps__number1">
+          <div class="col steps__info ">
+            <img src="./images/step1.svg" class="wow zoomIn">
+            <p class="wow zoomIn">Заполняете форму <br> и оставляете вопрос</p>
+            <div class="steps__number steps__number1 wow fadeOut" data-wow-duration="1s">
               <span>1</span>
             </div>
           </div>
           <div class="col steps__info">
-            <img src="./images/step2.svg">
-            <p>Мы получаем заявку и передаем её специалисту</p>
-            <div class=" steps__number steps__number2">
+            <img  class="wow zoomIn" data-wow-duration="1s" src="./images/step2.svg">
+            <p  class="wow zoomIn" data-wow-duration="1s">Мы получаем заявку и передаем её специалисту</p>
+            <div class=" steps__number steps__number2 wow fadeOut" data-wow-duration="2s">
               <span>2</span>
             </div>
           </div>
           <div class="col steps__info">
-            <img src="./images/step3.svg">
-            <p>Вам звонит аналитик и дает ответ на ваш вопрос</p>
-            <div class="steps__number steps__number3">
+            <img class="wow zoomIn" data-wow-duration="2s" src="./images/step3.svg">
+            <p class="wow zoomIn" data-wow-duration="2s" >Вам звонит аналитик и дает ответ на ваш вопрос</p>
+            <div class="steps__number steps__number3 wow fadeOut" data-wow-duration="3s">
               <span>3</span>
             </div>
           </div>
@@ -214,9 +216,11 @@
               <div>
                 <button class="form__button--ask">СПРОСИТЬ У АНАЛИТИКА</button>
               </div>
-             <div>
-              <button class="form__button--choose">выберите из списка</button>
-             </div> 
+              <div class="scroll"> 
+                <a href="#list">
+                <button class="form__button--choose">выберите из списка</button>
+               </a>
+               </div>
             </form>
           </div>
         </div>
@@ -254,9 +258,10 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

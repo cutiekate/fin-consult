@@ -64,19 +64,38 @@
         display: inline-block;
         width: 360px;
         height: 8px;
-        background-color: #D2E3FF;
+        background-color: #0063FF;
         border-radius: 5px;
         border: none;
         margin-left: 15px;
         position: absolute;
         top: 195px;
+        animation-name: grow;
+        animation-delay: 1s;
+        animation-duration: 1s;
+        transition: background-color width 1s ease-in-out;
     }
+
+    &__number2:after {
+        animation-delay: 2s;
+    }
+
+    @keyframes grow{
+        from{
+            width: 0px;
+        }
+        
+        to {
+            width: 360px;
+        }
+    }
+
 
 
     @media screen and(max-width: 1024px) {
         &__number1:after,
         &__number2:after {
-            width: 300px;
+            width: 273px;
         }
     }
 
