@@ -1,0 +1,69 @@
+.manager {
+    width: 300px;
+    height: 160px;
+    position: fixed;
+    background: $white;
+    z-index: 1;
+    right: 20px;
+    box-shadow: -10px 10px 40px rgba(67, 67, 67, 0.1);
+    border-radius: 5px 5px 0px 0px;
+
+    h5 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        color: #454C66;
+        padding-left: 17px;
+        padding-top: 18px;
+    }
+
+    &__info {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 10px;
+     
+    }
+
+    &__info div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    &__info div p {
+        margin-bottom: 0;
+        padding-left: 15px;
+        font-family: "Lato";
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.06em;
+        color: rgba(69, 76, 102, 0.5);
+    }
+
+    &__info--name {
+        font-family: "Roboto",sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+@media screen and(max-width: 768px) {
+    .manager {
+        top: 700px;
+        right: 40px;
+    }
+}
+@media screen and(max-width: 414px) {
+    .manager {
+        top: 550px;
+        right: 10px;
+    }
+}
+@media screen and(max-width: 375px) {
+    .manager {
+        top: 635px;
+    }
+}
