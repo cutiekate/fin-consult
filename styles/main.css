@@ -454,7 +454,12 @@ h1 {
     font-size: 15px;
     line-height: 0px;
     letter-spacing: 0.06em;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    -webkit-transition: 1s;
+    transition: 1s; }
+  .consultation__btn:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
   .consultation__items {
     margin-top: 100px; }
   .consultation__item {
@@ -725,9 +730,6 @@ h1 {
   @media screen and (max-width: 320px) {
     .footer__line {
       width: 320px; } }
-
-html {
-  scroll-behavior: smooth; }
 
 body {
   background: #eee; }
