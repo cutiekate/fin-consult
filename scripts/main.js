@@ -1,5 +1,7 @@
 'use strict';
 
+new WOW().init();
+
 $('.form__button--ask').on('click', function(event) {
     event.preventDefault();
     $('.form__textarea').css({"display" : "none"});
@@ -9,13 +11,35 @@ $('.form__button--ask').on('click', function(event) {
     $('.form h5').css({"color": "#0063FF"});
 })
 
-$(".form__button--choose").on("click","a", function (event) {
- 
-    event.preventDefault();
-    
-    var id = $(this).attr('href'),
-
-    top = $(id).offset().top;
-    
-    $('body,html').animate({scrollTop: top}, 1500);
+$(document).ready(function(){
+    $(".question__card--btn").hide(); 
+    $('.question__card').hover(function(){
+        if ($(this).hasClass('active')) {
+            $(".question__card--btn").hide(); 
+        } else {
+            $(".question__card--btn").hide(); 
+            $(".question__card--btn", this).toggle();
+        }
     });
+});
+
+$(".question__card").on('click', function(event){
+    event.preventDefault();
+
+    $(this).toggleClass('active');
+
+    if ($(this).hasClass('active')) {
+        $(this).css({"background": "#03C473"});
+        $(this).css({"background-image": "url('./images/icon check.svg')"});
+        $(this).css({"background-repeat": "no-repeat"});
+        $(this).css({"background-position": "95% 40%"});
+        $('question__card--btn').css({"display": "none"});
+        $(this).find("p").css({"color": "white"});
+    } else {
+        $(this).css({"background": "white"});
+        $(this).find("p").css({"color": "#747A88"});
+    }
+
+});
+
+
