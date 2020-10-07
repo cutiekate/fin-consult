@@ -7,7 +7,7 @@ $(".scroll").on("click","a", function (event) {
 
     //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top;
-    
+
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
 });
@@ -24,14 +24,19 @@ $('.form__button--ask').on('click', function(event) {
 })
 
 $(document).ready(function(){
-    $(".question__card--btn").hide(); 
+    $(".question__card--btn").hide();
     $('.question__card').hover(function(){
         if ($(this).hasClass('active')) {
-            $(".question__card--btn").hide(); 
+            $(".question__card--btn").hide();
         } else {
-            $(".question__card--btn").hide(); 
+            $(".question__card--btn").hide();
             $(".question__card--btn", this).toggle();
         }
+    });
+
+    $('.question__card').on("mouseleave", function(){
+        $(".question__card--btn").hide();
+
     });
 });
 
@@ -48,11 +53,11 @@ $(".question__card").on('click', function(event){
         $('question__card--btn').css({"display": "none"});
         $(".question__card--btn").hide();
         $(this).find("p").css({"color": "white"});
-     
+
     } else {
         $(this).css({"background": "white"});
         $(this).find("p").css({"color": "#747A88"});
-       
+
     }
 
     if($(".question__card").hasClass('active')) {
@@ -67,11 +72,8 @@ $(".question__card").on('click', function(event){
 
 $(function() {
     var d = new Date()
+    var day = d.getDay();
     var time = d.getHours()
-    if (time >= 9 && time < 18)
+    if ((time >= 9 && time < 18) && (day >=1 && day <= 5))
     $(".manager").css("display", "block")
 });
-
-
-
-

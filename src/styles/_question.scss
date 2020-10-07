@@ -99,7 +99,7 @@
         transform: scale(1.05);
     }
 
-    @media screen and(max-width: 414px){
+    @media screen and(max-width: 415px){
         &__header {
             text-align: center;
             font-size: 27px;
@@ -113,13 +113,17 @@
         &__card p {
             line-height: 20px;
             width: 250px;
-        }  
+        }
+
+        &__button--choose {
+          width: 340px;
+        }
     }
 
     @media screen and(max-width: 320px){
         &__card p {
             font-size: 16px;
-        }  
+        }
 
         &__header {
             font-size: 22px;
@@ -127,6 +131,9 @@
 
         &__card--btn {
             font-size: 8px;
+        }
+        &__button--choose {
+          width: 290px;
         }
     }
 }

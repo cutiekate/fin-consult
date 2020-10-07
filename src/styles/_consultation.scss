@@ -85,18 +85,18 @@
 
         &__items {
             margin-top: 50px;
-        } 
+        }
     }
 
-    @media screen and(max-width: 414px) {
+    @media screen and(max-width: 415px) {
         &__header {
             margin-top: 50px;
         }
     }
 
-    @media screen and(max-width: 375px) {
+    @media screen and(max-width: 376px) {
         &__btn {
-            width:  300px;
+          width: 350px;
         }
 
         &__item p {
@@ -106,17 +106,24 @@
 
     @media screen and(max-width: 320px) {
         &__item {
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
         }
 
         &__header {
             font-size: 26px;
-            text-align: center;
         }
 
         &__item p {
-            text-align: center;
+            text-align: left;
+        }
+
+        &__item img {
+          width: 100px;
+        }
+
+        &__btn {
+          width: 295px;
         }
     }
 }

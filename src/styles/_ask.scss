@@ -42,7 +42,7 @@
         }
     }
 
-    @media screen and(max-width: 414px) {
+    @media screen and(max-width: 415px) {
         &__header {
             margin-top: 5px;
             font-size: 34px;
@@ -53,10 +53,10 @@
         }
     }
 
-    @media screen and(max-width: 375px){
+    @media screen and(max-width: 376px){
         &__header {
-            line-height: 57px;
-            font-size: 31px;
+            line-height: 45px;
+            font-size: 30px;
         }
     }
 

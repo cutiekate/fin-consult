@@ -2,8 +2,8 @@
     display: none;
     width: 300px;
     height: 160px;
-    position: fixed;
-    top: 900px;
+    position: sticky;
+    margin-left: 900px;
     background: $white;
     z-index: 1;
     right: 20px;
@@ -26,7 +26,7 @@
         display: flex;
         padding-left: 20px;
         padding-top: 10px;
-     
+
     }
 
     &__info div {
@@ -52,20 +52,30 @@
         text-transform: capitalize;
     }
 }
+
+@media screen and(max-width: 1024px) {
+  .manager {
+    margin-left: 630px;
+  }
+}
 @media screen and(max-width: 768px) {
     .manager {
-        top: 700px;
-        right: 40px;
+      margin-left: 390px;
     }
 }
-@media screen and(max-width: 414px) {
+@media screen and(max-width: 415px) {
     .manager {
-        top: 550px;
-        right: 10px;
+      margin-left: 75px;
     }
 }
-@media screen and(max-width: 375px) {
+@media screen and(max-width: 376px) {
     .manager {
-        top: 635px;
+      margin-left: 25px;
     }
+}
+
+@media screen and(max-width: 321px) {
+  .manager {
+    margin-left: -4px;
+  }
 }

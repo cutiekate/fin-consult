@@ -45,7 +45,7 @@
         height: 50px;
         background-color: #D2E3FF;
         border-radius: 50%;
-    } 
+    }
 
     &__number1,
     &__number2,
@@ -76,10 +76,10 @@
         margin-left: 12px;
         position: absolute;
         top: 22px;
-        animation-name: grow;
-        animation-delay: 1s;
-        animation-duration: 1s;
-        transition: background-color width 1s ease-in-out;
+        // animation-name: grow;
+        // animation-delay: 1s;
+        // animation-duration: 1s;
+        // transition: background-color width 1s ease-in-out;
     }
 
     &__number2:after {
@@ -90,7 +90,7 @@
         from{
             width: 0px;
         }
-        
+
         to {
             width: 360px;
         }
@@ -116,12 +116,16 @@
         }
     }
 
-    @media screen and(max-width: 414px) {
+    @media screen and(max-width: 415px) {
 
         &__info {
             flex-direction: column-reverse;
             flex-wrap: wrap;
             min-width: 100%;
+        }
+
+        &__numbers {
+          display: none;
         }
 
         &__number1:after,
@@ -141,8 +145,8 @@
         }
     }
 
- 
-    @media screen and(max-width: 320px) {
+
+    @media screen and(max-width: 321px) {
 
       &__header {
         font-size: 27px;

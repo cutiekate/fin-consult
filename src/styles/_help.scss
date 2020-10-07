@@ -24,16 +24,16 @@
     }
      &__card_bg1 {
          background: url("../images/icon-people-1.svg") no-repeat 20% 50%;
-       
+
      }
      &__card_bg2 {
         background: url("../images/icon-people-2.svg") no-repeat 20% 50%;
      }
-     
+
     &__card_bg3 {
         background: url("../images/icon-people-3.svg") no-repeat 20% 50%;
     }
-    
+
     &__card h3 {
         font-family: "Lato";
         font-style: normal;
@@ -57,11 +57,11 @@
     @media screen and(max-width: 768px) {
         &__card h3 {
             line-height: 21px;
-            padding-top: 10px; 
+            padding-top: 10px;
         }
     }
 
-    @media screen and(max-width: 414px) {
+    @media screen and(max-width: 415px) {
         &__header {
             text-align: center;
             margin-top: 40px;
@@ -70,7 +70,8 @@
 
         &__card,
         &__card:last-child {
-            margin: 0 30px 30px;
+            margin: 0 10px 10px;
+            min-width: 90%;
         }
 
         &__card h3 {

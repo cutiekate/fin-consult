@@ -107,16 +107,16 @@
       &__input--user-img {
         background: url(../images/User.svg) no-repeat 5% 50%;
       }
-    
+
       &__input--email-img {
         background: url(../images/email.svg) no-repeat 5% 50%;
       }
-    
+
       &__input--phone-img {
         background: url(../images/phone.svg) no-repeat 5% 50%;
       }
 
-    @media screen and(max-width: 414px){
+    @media screen and(max-width: 415px){
         &__textarea,
         &__input {
             width: 265px;
@@ -155,8 +155,17 @@
         &__button--ask,
         &__button--choose,
         &__input  {
-            width: 210px;
-            margin-left: 24px; 
+          width: 265px;
+          margin-left: 10px;
+        }
+
+        &__button--ask {
+          margin-right: 0;
+        }
+
+        &__textarea {
+          margin-right: 0;
+          margin-left: 10px;
         }
     }
 }
@@ -167,7 +176,7 @@
     }
 }
 
-@media screen and(max-width: 414px){
+@media screen and(max-width: 415px){
     .form {
         width: 350px;
     }
@@ -184,7 +193,7 @@
 
 @media screen and(max-width: 320px){
     .form {
-        width: 260px;
+        width: 290px;
     }
 
     .form h3 {

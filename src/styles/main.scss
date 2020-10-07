@@ -24,5 +24,56 @@ a,
 a:hover,
 a:active {
   text-decoration: none !important;
-  color: $green !important;
+  color: none !important;
+}
+
+.modal-header {
+  border: 0;
+}
+.modal-content {
+  background: #E3EDF3;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+.modal-content form {
+  padding: 20px;
+}
+.modal-content form h3 {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #195B84;
+  margin-bottom: 20px;
+}
+.modal-content form h4 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #195B84;
+  margin-bottom: 30px;
+}
+.modal-content form input,
+.modal-content form label {
+  max-width: 100%;
+  width: 100%;
+}
+.modal-content form input {
+  color: rgba(59, 87, 148, 0.6);
+  margin-bottom: 25px;
+  padding-left: 20px;
+  height: 65px;
+  background: #FFFFFF;
+  border: 2px solid #E2E2E2;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.modal-content form button {
+  max-width: 100%;
+  width: 100%;
+  padding: 25px 0;
+  background:  #03C473;
+  color: white;
+  box-shadow: 15px 5px 20px rgba(3, 196, 115, 0.05);
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
 }

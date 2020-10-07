@@ -54,22 +54,28 @@
 
     @media screen and(max-width: 768px) {
         &__line {
-            width: 768px;
+            width: 760px;
         }
     }
-    @media screen and(max-width: 414px) {
+    @media screen and(max-width: 415px) {
         &__line {
-            width: 414px;
+            width: 410px;
         }
     }
-    @media screen and(max-width: 375px) {
+    @media screen and(max-width: 376px) {
         &__line {
-            width: 375px;
+            width: 370px;
         }
     }
     @media screen and(max-width: 320px) {
         &__line {
-            width: 320px;
+            width: 315px;
+        }
+
+        &__contacts {
+          min-width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
         }
     }
 }
