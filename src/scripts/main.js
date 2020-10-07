@@ -46,12 +46,30 @@ $(".question__card").on('click', function(event){
         $(this).css({"background-repeat": "no-repeat"});
         $(this).css({"background-position": "95% 40%"});
         $('question__card--btn').css({"display": "none"});
+        $(".question__card--btn").hide();
         $(this).find("p").css({"color": "white"});
+     
     } else {
         $(this).css({"background": "white"});
         $(this).find("p").css({"color": "#747A88"});
+       
     }
 
+    if($(".question__card").hasClass('active')) {
+        $(".question__button--choose").css({"background": "#03C473"});
+        $(".question__button--choose").css({"color": "#fff"});
+    } else {
+        $(".question__button--choose").css({"background": "#fff"});
+        $(".question__button--choose").css({"color": "#03C473"});
+    }
+
+});
+
+$(function() {
+    var d = new Date()
+    var time = d.getHours()
+    if (time >= 9 && time < 18)
+    $(".manager").css("display", "block")
 });
 
 

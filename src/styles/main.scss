@@ -19,3 +19,10 @@ body {
   color: $main-blue;
   font-weight: bold;
 }
+
+a,
+a:hover,
+a:active {
+  text-decoration: none !important;
+  color: $green !important;
+}

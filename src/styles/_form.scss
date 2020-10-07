@@ -65,9 +65,16 @@
     }
 
     &__button--choose {
+        text-align: center;
         background: $bgc;
         color: $green;
         border: 2px solid $green;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button--choose span {
+        padding-top: 10px;
     }
 
     &__button--ask:hover,
